@@ -15,9 +15,9 @@ It provides:
 - **Operations on large datasets** used in data science, machine learning, and scientific computing.
 
 To use NumPy, we first need to import it:
-"""
+```
 import numpy as np
-"""
+```
 
 ### NumPy Arrays
 
@@ -30,7 +30,7 @@ Unlike Python lists, NumPy arrays:
 #### Creating Arrays
 
 You can create NumPy arrays in several ways:
-"""
+```
 # Creating an array from a Python list
 list_data = [1, 2, 3, 4, 5]
 array_1d = np.array(list_data)
@@ -54,12 +54,12 @@ print("Range Array:", range_array)
 # Creating an array of equally spaced values
 linspace_array = np.linspace(0, 1, 5)  # 5 values from 0 to 1
 print("Linspace Array:", linspace_array)
-"""
+```
 
 ### Basic Array Operations
 
 NumPy allows **fast element-wise operations** without the need for loops.
-"""
+```
 # Element-wise addition, subtraction, multiplication, and division
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
@@ -71,20 +71,20 @@ print("Division:", a / b)  # [0.25, 0.4, 0.5]
 
 # Scalar operations
 print("Multiply by Scalar:", a * 3)  # [3, 6, 9]
-"""
+```
 
 #### Mathematical Functions
 NumPy provides optimized **mathematical functions** that work on arrays.
-"""
+```
 # Square root, exponential, and logarithm
 print("Square Root:", np.sqrt(a))  # [1. 1.414 1.732]
 print("Exponential:", np.exp(a))  # [e^1, e^2, e^3]
 print("Logarithm:", np.log(a))  # Natural log
-"""
+```
 
 #### Aggregation Functions
 NumPy provides functions to compute statistics on arrays.
-"""
+```
 array = np.array([[1, 2, 3], [4, 5, 6]])
 
 print("Sum:", np.sum(array))  # Total sum of all elements
@@ -92,11 +92,11 @@ print("Mean:", np.mean(array))  # Average value
 print("Max:", np.max(array))  # Largest element
 print("Min:", np.min(array))  # Smallest element
 print("Standard Deviation:", np.std(array))  # Measure of spread
-"""
+```
 
 #### Indexing and Slicing
 You can **access elements, rows, and slices** of a NumPy array just like Python lists.
-"""
+```
 # Indexing a 1D array
 arr = np.array([10, 20, 30, 40])
 print("First element:", arr[0])  # 10
@@ -110,7 +110,7 @@ print("Element at row 0, column 1:", matrix[0, 1])  # 2
 print("First two elements:", arr[:2])  # [10, 20]
 print("Last two elements:", arr[-2:])  # [30, 40]
 print("First row of matrix:", matrix[0, :])  # [1, 2, 3]
-"""
+```
 
 ### Summary of Key NumPy Features
 
