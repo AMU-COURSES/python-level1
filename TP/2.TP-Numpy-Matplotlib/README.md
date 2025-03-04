@@ -15,7 +15,7 @@ It provides:
 - **Operations on large datasets** used in data science, machine learning, and scientific computing.
 
 To use NumPy, we first need to import it:
-```
+```python
 import numpy as np
 ```
 
@@ -30,7 +30,7 @@ Unlike Python lists, NumPy arrays:
 #### Creating Arrays
 
 You can create NumPy arrays in several ways:
-```
+```python
 # Creating an array from a Python list
 list_data = [1, 2, 3, 4, 5]
 array_1d = np.array(list_data)
@@ -59,7 +59,7 @@ print("Linspace Array:", linspace_array)
 ### Basic Array Operations
 
 NumPy allows **fast element-wise operations** without the need for loops.
-```
+```python
 # Element-wise addition, subtraction, multiplication, and division
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
@@ -75,7 +75,7 @@ print("Multiply by Scalar:", a * 3)  # [3, 6, 9]
 
 #### Mathematical Functions
 NumPy provides optimized **mathematical functions** that work on arrays.
-```
+```python
 # Square root, exponential, and logarithm
 print("Square Root:", np.sqrt(a))  # [1. 1.414 1.732]
 print("Exponential:", np.exp(a))  # [e^1, e^2, e^3]
@@ -84,7 +84,7 @@ print("Logarithm:", np.log(a))  # Natural log
 
 #### Aggregation Functions
 NumPy provides functions to compute statistics on arrays.
-```
+```python
 array = np.array([[1, 2, 3], [4, 5, 6]])
 
 print("Sum:", np.sum(array))  # Total sum of all elements
@@ -96,7 +96,7 @@ print("Standard Deviation:", np.std(array))  # Measure of spread
 
 #### Indexing and Slicing
 You can **access elements, rows, and slices** of a NumPy array just like Python lists.
-```
+```python
 # Indexing a 1D array
 arr = np.array([10, 20, 30, 40])
 print("First element:", arr[0])  # 10
