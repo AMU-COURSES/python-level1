@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fireworks_game"
+version = "1.0.0"
+description = "A simple text-based game with fireworks celebration"
+authors = [{name = "Julien Zoubian", email = "zoubian@cppm.in2p3.fr"}]
+dependencies = ["numpy", "matplotlib"]
+
+[project.scripts]
+fireworks-game = "fireworks_game.main:main"
+
+
